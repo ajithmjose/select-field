@@ -26,16 +26,21 @@ class SelectField extends React.Component {
       'color':'#999'
     }
 
+    const checkLabelStyle = {
+      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif'
+    }
+
     return (
       <SF
         floatingLabelText={this.props.floatingLabelText}
         value={this.state.value}
         onChange={this.onChange}
+        labelStyle={checkLabelStyle}
         style={selectStyle}
         floatingLabelStyle={selectStyle}
       >
       {this.state.choices&& this.state.choices.map(choice =>
-        <MenuItem value={choice} key={choice} primaryText={choice}>
+        <MenuItem value={choice.value} key={choice.value} primaryText={choice.label}>
         </MenuItem>,
       )}
     </SF>

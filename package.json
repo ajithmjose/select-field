@@ -1,6 +1,6 @@
 {
   "name": "@react-ag-components/selectfield",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "select React component, extends from Material-ui",
   "main": "lib/index.js",
   "module": "es/index.js",
