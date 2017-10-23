@@ -26,7 +26,7 @@ class SelectField extends React.Component {
       'color':'#999'
     }
 
-    const checkLabelStyle = {
+    const labelStyle = {
       fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif'
     }
 
@@ -35,7 +35,8 @@ class SelectField extends React.Component {
         floatingLabelText={this.props.floatingLabelText}
         value={this.state.value}
         onChange={this.onChange}
-        labelStyle={checkLabelStyle}
+        labelStyle={labelStyle}
+        menuItemStyle={labelStyle}
         style={selectStyle}
         floatingLabelStyle={selectStyle}
       >
